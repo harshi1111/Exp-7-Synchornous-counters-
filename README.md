@@ -1,10 +1,14 @@
-# Exp-6-Synchornous-counters - up counter and down counter 
-### AIM: To implement 4 bit up and down counters and validate  functionality.
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
-### THEORY 
-
-## UP COUNTER 
+## NAME: HARSHITHA.V
+## REG-NO: 23002305
+## Exp-6-Synchornous-counters - up counter and down counter 
+### AIM: 
+To implement 4 bit up and down counters and validate  functionality.
+### HARDWARE REQUIRED:
+– PC, Cyclone II , USB flasher
+### SOFTWARE REQUIRED: 
+Quartus prime
+### THEORY:
+## UP COUNTER:
 The counter is a digital sequential circuit and here it is a 4 bit counter, which simply means it can count from 0 to 15 and vice versa based upon the direction of counting (up/down). 
 
 The counter (“count“) value will be evaluated at every positive (rising) edge of the clock (“clk“) cycle.
@@ -32,38 +36,40 @@ The Q outputs of each flip-flop will serve as the respective binary bits of the 
  
 
 Four-bit “Up” Counter
-![image](https://user-images.githubusercontent.com/36288975/169644758-b2f4339d-9532-40c5-af40-8f4f8c942e2c.png)
 
-
-
-## DOWN COUNTER 
-
-As well as counting “up” from zero and increasing or incrementing to some preset value, it is sometimes necessary to count “down” from a predetermined value to zero allowing us to produce an output that activates when the zero count or some other pre-set value is reached.
-
-This type of counter is normally referred to as a Down Counter, (CTD). In a binary or BCD down counter, the count decreases by one for each external clock pulse from some preset value. Special dual purpose IC’s such as the TTL 74LS193 or CMOS CD4510 are 4-bit binary Up or Down counters which have an additional input pin to select either the up or down count mode.
-![image](https://user-images.githubusercontent.com/36288975/169644844-1a14e123-7228-4ed8-81a9-eb937dff4ac8.png)
-
-
-4-bit Count Down Counter
-### Procedure
+### Procedure:
 /* write all the steps invloved */
+1. Create a New Project:
+   - Open Quartus and create a new project by selecting "File" > "New Project Wizard."
+   - Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
+
+2. Create a New Design File:
+   - Once the project is created, right-click on the project name in the Project Navigator and select "Add New File."
+   - Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
+
+3. Write the Combinational Logic Code:
+   - Open the newly created Verilog or VHDL file and write the code for your combinational logic.
+     
+4. Compile the Project:
+   - To compile the project, click on "Processing" > "Start Compilation" in the menu.
+   - Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
+
+5. Analyze and Fix Errors:*
+   - If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
+   - Review and fix any issues in your code if necessary.
+   - View the RTL diagram.
+
+6.*Verification:
+   - Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+   - Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
+   - Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform.
 
 
-
-### PROGRAM 
+### PROGRAM:
 /*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Program for flipflops  and verify its truth table in quartus using Verilog programming.  
 */
-
-
-
-
-
-
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
-
+![Screenshot (36)](https://github.com/harshi1111/Exp-7-Synchornous-counters-/assets/84671735/b7afbd88-d616-4854-92db-37a14598ea02)
 
 
 
@@ -71,18 +77,19 @@ RegisterNumber:
 
 
 
-
-### TIMING DIGRAMS FOR COUNTER  
-
-
+### RTL LOGIC UP COUNTER:
+![Screenshot (34)](https://github.com/harshi1111/Exp-7-Synchornous-counters-/assets/84671735/d8e0ef98-1854-459c-8038-282cf36f04db)
 
 
 
-### TRUTH TABLE 
+### TIMING DIGRAMS FOR COUNTER :
+![Screenshot (32)](https://github.com/harshi1111/Exp-7-Synchornous-counters-/assets/84671735/0bb46941-c35e-4455-a8ea-c1223684da16)
 
 
 
+### TRUTH TABLE :
+![Screenshot (30)](https://github.com/harshi1111/Exp-7-Synchornous-counters-/assets/84671735/b7beba73-b7b5-4929-a0f3-b180997d73b3)
 
 
-
-### RESULTS 
+### RESULTS:
+Thus the up counter has been verified using verilog programming.
